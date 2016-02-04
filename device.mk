@@ -51,7 +51,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.sys.perf.device.touchboost=1833000
 
 $(call inherit-product-if-exists, vendor/asus/Z00A/Z00A-vendor.mk)
-$(call inherit-product-if-exists, vendor/qcom/opensource/dpm/Android.mk)
 
 # Inherit from mofd-common
 $(call inherit-product, device/asus/mofd-common/mofd.mk)
