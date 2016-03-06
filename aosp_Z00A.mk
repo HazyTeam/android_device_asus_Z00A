@@ -26,14 +26,14 @@ PRODUCT_BRAND := asus
 PRODUCT_MODEL := AOSP on Z00A
 PRODUCT_MANUFACTURER := asus
 PRODUCT_DEVICE := Z00A
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=WW_Z00A \
     BUILD_FINGERPRINT=asus/WW_Z00A/Z00A:5.0/LRX21V/2.19.40.22_20150627_5104_user:user/release-keys \
     PRIVATE_BUILD_DESC="asusmofd_fhd-user 5.0 LRX21V 2.19.40.22_20150627_5104_user release-keys"
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
 
 $(call inherit-product, device/asus/Z00A/device.mk)
 $(call inherit-product-if-exists, vendor/asus/Z00A/device-vendor.mk)
